@@ -37,7 +37,7 @@ main h2 {
 }
 
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
-    color: white;
+    color: black;
 }
 
 footer a:hover {
