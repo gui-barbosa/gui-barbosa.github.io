@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow');
+
+body {
+    background-color: white;
+    font-family: Barlow;
+}
+
+#index-main {
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    padding: 8px;
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 15px;
+}
+
+.profile{
+    float: right;
+    box-shadow: 0 0 20px black;
+}
+
+header h1 {
+    font-size: 35px;
+    padding-left: 100px;
+    letter-spacing: 5px;
+
+}
+
+main h2 {
+    border-bottom: 1px solid black;
+}
+
+footer {
+    padding: 8px;
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    display: block;
+    clear: both;
+}
+
+footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
+    color: white;
+}
+
+footer a:hover {
+    color:white;
+}
+
+#lastUpdated{
+    color: yellow;
+}
