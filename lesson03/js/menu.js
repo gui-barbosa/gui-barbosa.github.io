@@ -7,3 +7,11 @@ window.addEventListener('load', () => {
     //To solve the mid resizing issue with responsive class on
     window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 })
+
+window.addEventListener('load',(event)=>{
+    const lu = document.querySelector('#lastupdated');
+    lu.textContent = document.lastModified;
+
+    // const cry = document.querySelector("#copyrightyear");
+    // cry.textContent = new Date().getFullYear();
+})

@@ -1,0 +1,67 @@
+@media only screen and (min-width: 54.5em) {
+    #navigation {
+        width: 800px;
+        margin: 0px auto;
+        font-size: 1.4em;
+    }
+
+    main {
+        max-width: 700px;
+    }
+  
+    a:link {
+        color: #FFFFFF;
+    }
+    
+    a:visited {
+        color: #FFFFFF;
+    }
+    
+    a:hover {
+        color: #FFFFFF;
+    }
+    
+    body {
+        background-color: #FFD61E;
+    }
+    
+    ul {
+        margin: 0;
+    }
+    
+    p, ul, ol {
+        font-family: 'Barlow', sans-serif;
+        font-size: 1em;
+        line-height: 1.2em;
+        color: #FF656E;
+        font-weight: 700;
+    }
+
+    footer p {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    h6 {
+        font-size: .8em;
+    }
+}
