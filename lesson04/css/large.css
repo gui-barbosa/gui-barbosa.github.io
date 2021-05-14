@@ -1,0 +1,93 @@
+@media only screen and (min-width: 54.5em) {
+    #navigation {
+        width: 800px;
+        margin: 0px auto;
+        font-size: 1.4em;
+    }
+
+    .article-img {
+        float: right;
+        width: 150px;
+        height: 150px;
+        margin-left: 30px;
+
+    }
+
+    header h1 {
+        font-size: 3.1em;
+    }
+
+    .motto {
+        font-size: 1.9em;
+    }
+
+    h1 {
+        font-size: 3.1em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    footer {
+        background-color: #FFA73F;
+        border: 1px solid black;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: .5em;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: .5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .preston-map {
+        grid-column: 2/4;
+        grid-row: 1;
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+    }
+
+    .contact-info {
+        grid-column: 2/3;
+        grid-row: 1;
+        margin-bottom: .5em;
+        justify-self: center;
+    }
+
+    .footer-bar {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+
+    .social {
+        grid-row: 2;
+        display: block;
+        grid-column: 2/3;
+        margin-top: .5em;
+        max-height: 100%;
+    }
+
+    .footer-bar p{
+        margin: 1px;
+        font-size: 1.5em;
+    }
+
+    .contact-info {
+        margin-left: 1em;
+    }
+
+}

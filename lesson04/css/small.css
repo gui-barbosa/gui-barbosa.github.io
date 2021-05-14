@@ -82,15 +82,10 @@ header {
 header h1, .motto {
     margin-block-end: 0px;
     margin-block-start: 0px;
-    grid-column: 2/3;
     font-weight: 700;
     align-self: center;
     justify-self: start;
     text-align: start;
-}
-
-header h1 {
-    font-size: 1.9em;
 }
 
 .motto {
@@ -113,7 +108,6 @@ main {
 
 .content-1 h2 {
     margin-top: 1px;
-    font-size: 1.5em;
 }
 
 .banner {
@@ -149,7 +143,7 @@ main {
     margin-bottom: 1em;
 }
 
-.forecast-icons {
+.forecast-1, .forecast-2, .forecast-3, .forecast-4, .forecast-5  {
     display: none;
 }
 
@@ -203,7 +197,19 @@ p, ul, ol {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.9em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.1em;
 }
 
 body {
@@ -243,6 +249,7 @@ footer a, footer a:link, footer a:hover, footer a:active, footer a:focus {
 
 .footer-bar {
     margin-top: 1em;
+    margin-bottom: .5em;
     text-align: center;
 }
 
