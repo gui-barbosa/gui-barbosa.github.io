@@ -1,0 +1,158 @@
+@media only screen and (min-width: 34.5em) {
+    nav {
+        max-width: 100%;
+    }
+
+    #navigation {
+        grid-template-columns: repeat(5, auto);
+        font-size: 1.1em;
+        margin: 0px auto;
+    }
+
+    #navigation li:first-child {
+        display: none;
+    }
+
+    #navigation li {
+        display: block;
+    }
+
+    #navigation a {
+        text-align: center;
+        display: block;
+        padding-top: .8em;
+        padding-bottom: .8em;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 700;
+    }
+
+    .ham {
+        display: none;
+    }
+
+    header {
+        background-color: #FFA73F;
+        padding-bottom: .5em;
+        padding-top: .5em;
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(2em, 5em) 1fr;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .logo {
+        max-width: 100px;
+        max-height: 100px;
+        width: 75px;
+        height: 75px;
+        grid-column: 1/2;
+        grid-row: 1/3;
+        margin-right: .5em;
+        margin-left: .5em;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    header h1, .motto {
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        font-weight: 700;
+        margin-left: .5em;
+    }
+
+    .motto {
+        font-size: 1.4em;
+    }
+    
+    main {
+        max-width: 100%;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+
+    .content-1 h2 {
+        margin: 1em;
+        margin-left: 0em;
+    }
+
+    .hero-banner {margin: 10px auto; position: relative;}
+    h3, p {margin: 0 auto;}
+    
+    
+    .weather-summary {
+        position: absolute;
+        top: 45px;
+        left: 50px;
+        background: radial-gradient(#eee, #0E6CD6);
+        padding: 1.5rem;
+        box-shadow: 0 0 30px #333;
+    }
+    
+    .forecast {
+        background-color: #FFA73F;
+        border: 1px solid black;
+        color: #FFFFFF;
+        margin-left: .5em;
+        margin-right: .5em;
+        margin-bottom: 1em;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        justify-items: center;
+    }
+    
+    .forecast h3 {
+        text-align: center;
+        margin: 10px;
+        color: #FFFFFF;
+        grid-row: 1;
+        grid-column: 1/6;
+    }
+
+    .forecast-1, .forecast-2, .forecast-3, .forecast-4, .forecast-5  {
+        display: grid;
+        max-width: 100%;
+    }
+
+    .article-img {
+        float: center;
+        margin: 5px;
+        border: 1px solid black;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.75em;
+    }
+
+    p {
+        font-size: 1.25em;
+    }
+    
+    footer {
+        background-color: #FFA73F;
+        width: 100%;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+    
+    .footer-bar p{
+        margin: 1px;
+        font-size: 1em;
+    }
+
+    .contact-info {
+        margin-left: 1em;
+    }
+
+}

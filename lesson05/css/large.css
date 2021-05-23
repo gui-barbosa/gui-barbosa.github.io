@@ -1,0 +1,108 @@
+@media only screen and (min-width: 54.5em) {
+    #navigation {
+        width: 800px;
+        margin: 0px auto;
+        font-size: 1.4em;
+    }
+
+    main {
+        max-width: 900px;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .hero-banner {margin: 10px auto; position: relative;}
+    h3, p {margin: 0 auto;}
+    
+    
+    .weather-summary {
+        position: absolute;
+        top: 45px;
+        left: 50px;
+        background: radial-gradient(#eee, #0E6CD6);
+        padding: 1.5rem;
+        box-shadow: 0 0 30px #333;
+    }
+
+    .article-img {
+        float: right;
+        margin: 5px;
+        border: 1px solid black;
+    }
+
+    header h1 {
+        font-size: 3.1em;
+    }
+
+    .motto {
+        font-size: 1.9em;
+    }
+
+    h1 {
+        font-size: 3.1em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    footer {
+        background-color: #FFA73F;
+        text-align: center;
+        width: 100%;
+        color: #FFFFFF;
+        margin-top: .5em;
+        margin-bottom: .5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .preston-map {
+        grid-column: 2/4;
+        grid-row: 1;
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+    }
+
+    .contact-info {
+        grid-column: 2/3;
+        grid-row: 1;
+        margin-bottom: .5em;
+        justify-self: center;
+    }
+
+    .footer-bar {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+
+    .social {
+        grid-row: 2;
+        display: block;
+        grid-column: 2/3;
+        margin-top: .5em;
+        max-height: 100%;
+    }
+
+    .footer-bar p{
+        margin: 1px;
+        font-size: 1.5em;
+    }
+
+    .contact-info {
+        margin-left: 1em;
+    }
+
+}
