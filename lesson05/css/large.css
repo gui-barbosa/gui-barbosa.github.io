@@ -24,12 +24,6 @@
         box-shadow: 0 0 30px #333;
     }
 
-    .article-img {
-        float: right;
-        margin: 5px;
-        border: 1px solid black;
-    }
-
     header h1 {
         font-size: 3.1em;
     }

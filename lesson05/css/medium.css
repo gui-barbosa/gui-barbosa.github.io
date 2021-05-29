@@ -4,13 +4,9 @@
     }
 
     #navigation {
-        grid-template-columns: repeat(5, auto);
+        grid-template-columns: repeat(6, auto);
         font-size: 1.1em;
         margin: 0px auto;
-    }
-
-    #navigation li:first-child {
-        display: none;
     }
 
     #navigation li {
@@ -114,11 +110,13 @@
         display: grid;
         max-width: 100%;
     }
-
+    
     .article-img {
-        float: center;
+        position: absolute;
+        right: 10px;
+        padding: 1.5rem;
+        float: right;
         margin: 5px;
-        border: 1px solid black;
     }
 
     h1 {
