@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loader</title>
+    <style>
+        .loading {
+            background-color: lightgray;
+            min-width: 400px;
+            min-height: 400px;
+            position: relative;
+        }
+
+        .placeholder-loading::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: -400px;
+            top: 0;
+            height: 100%;
+            width: 400px;
+            background: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+            animation: load 3s;
+            z-index: 50;
+        }
+
+        .placeholder-loading {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes load {
+            0% {
+                left: -400px;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="placeholder-loading"><img src="https://loremflickr.com/300/400/dog?random=1" alt="" class="loading" loading="lazy"></div>
+    <div class="placeholder-loading"><img src="https://loremflickr.com/300/400?random=2" alt="" class="loading" loading="lazy"></div>
+    <div class="placeholder-loading"><img src="https://loremflickr.com/300/400/paris?random=3" alt="" class="loading" loading="lazy"></div>
+    <div class="placeholder-loading"><img src="https://loremflickr.com/300/400/brazil,rio?random=4" alt="" class="loading" loading="lazy"></div>
+    <div class="placeholder-loading"><img src="https://loremflickr.com/300/400/paris?random=5" alt="" class="loading" loading="lazy"></div>
+    <div class="placeholder-loading"><img src="https://loremflickr.com/300/400/dog?random=6" alt="" class="loading" loading="lazy"></div>
+    <div class="placeholder-loading"><img src="https://loremflickr.com/green/300/400/paris?random=7" alt="" class="loading" loading="lazy"></div>
+    <div class="placeholder-loading"><img src="https://loremflickr.com/blue/300/400/paris?random=8" alt="" class="loading" loading="lazy"></div>
+    <div class="placeholder-loading"><img src="https://loremflickr.com/300/400/brazil,rio?random=9" alt="" class="loading" loading="lazy"></div>
+    <div class="placeholder-loading"><img src="https://loremflickr.com/300/400/dog?random=10" alt="" class="loading" loading="lazy"></div>
+    <div class="placeholder-loading"><img src="https://loremflickr.com/300/400?random=11" alt="" class="loading" loading="lazy"></div>
+    <div class="placeholder-loading"><img src="https://loremflickr.com/300/400/paris,girl/all?random=12" alt="" class="loading" loading="lazy"></div>
+    
+</body>
+</html>
