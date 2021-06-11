@@ -33,6 +33,7 @@ tfoot td {
 .table_content:nth-child(1){
     background-color: #628ca6;
     color: white;
+    font-weight: bold;
 }
 
 .table_content:nth-child(6)td{
