@@ -13,10 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
-    <script src="scripts/scripts.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script> WebFont.load({google: {families: ['Barlow','Montserrat']}}); </script>
-    <script src="scripts/towndata.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -34,17 +31,44 @@
 
     <nav>
         <ul id="navigation">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="/lesson06/preston-6.html">Preston</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-6.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a class="active" href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
     <main>
-        <section id="towndata"></section>
+        <h2>Weather Gallery</h2>
+        <div class="weather-gallery">
+
+            <div class="placeholder-loading"><img src="images/1sunny.png" alt="Sunny Image" class="loading" loading="lazy">
+                <figcaption>This is a a sunny image used as an example of this assignment.</figcaption>
+            </div>
+
+            <div class="placeholder-loading"><img src="images/2windy.png" alt="Windy Image" class="loading" loading="lazy">
+                <figcaption>This is a a windy image used as an example of this assignment.</figcaption>
+            </div>
+
+            <div class="placeholder-loading"><img src="images/3stormy.png" alt="Stormy Image" class="loading" loading="lazy">
+                <figcaption>This is a a stormy image used as an example of this assignment.</figcaption>
+            </div>
+
+            <div class="placeholder-loading"><img src="images/4snowy.png" alt="Snowy Image" class="loading" loading="lazy">
+                <figcaption>This is a a snowy image used as an example of this assignment.</figcaption>
+            </div>
+
+            <div class="placeholder-loading"><img src="images/5rainny.png" alt="Rainny Image" class="loading" loading="lazy">
+                <figcaption>This is a a rainny image used as an example of this assignment.</figcaption>
+            </div>
+
+            <div class="placeholder-loading"><img src="images/6cloudy.png" alt="Cloudy Image" class="loading" loading="lazy">
+                <figcaption>This is a a cloudy image used as an example of this assignment.</figcaption>
+            </div>
+
+        </div>
 
     </main>
 
@@ -76,7 +100,10 @@
             </p>
         </div>
     </footer>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({google: {families: ['Barlow','Montserrat']}});
+    </script>
 </body>
 
 </html>

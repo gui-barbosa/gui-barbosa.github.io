@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
-    <script src="js/scripts.js"></script>
+    <script src="scripts/preston.js"></script>
 </head>
 
 <body>
@@ -50,38 +50,35 @@
             </div>
             <div class="weather-summary">
                 <h3>Weather Summary</h3>
-                <p>Currently: <span id="temp">55</span>°F</p>
-                <p>High: 79°F</p>
-                <p>Low: 49°F</p>
-                <p>Humidity: 37%</p>
-                <p>Wind Speed: <span id="wind-speed">12</span>mph</p>
-                <p>Wind Chill: <span id="wind-chill">60</span>°F</p>
+                <p>Currently: <span id="temp">*</span>&deg;</p>
+                <p>Condition: <span id="condition">*</p>
+                <p>High: <span id="high-temp">*</span>&deg;</p>
+                <p>Low: <span id="low-temp">*</span>&deg;</p>
+                <p>Humidity: <span id="hum">*</span>%</p>
+                <p>Wind Speed: <span id="wind-speed">*</span> mph</p>
+                <p>Wind Chill: <span id="wind-chill">*</span></p>
             </div>
         </div><br>
 
-        <section class="forecast">
-            <h3>Five Day Forecast</h3>
-            <div id="day1">
-              <img src="images/cloudy.svg" alt="forecast">
-              <p><span class="temp">Error</span>&deg; <span class="day-desc">Error</span></p>
-            </div>
-            <div id="day2">
-              <img src="images/cloudy.svg" alt="forecast">
-              <p><span class="temp">Error</span>&deg; <span class="day-desc">Error</span></p>
-            </div>
-            <div id="day3">
-              <img src="images/cloudy.svg" alt="forecast">
-              <p><span class="temp">Error</span>&deg; <span class="day-desc">Error</span></p>
-            </div>
-            <div id="day4">
-              <img src="images/cloudy.svg" alt="forecast">
-              <p><span class="temp">Error</span>&deg; <span class="day-desc">Error</span></p>
-            </div>
-            <div id="day5">
-              <img src="images/cloudy.svg" alt="forecast">
-              <p><span class="temp">Error</span>&deg; <span class="day-desc">Error</span></p>
-            </div>
-          </section>
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <tr>
+                    <th id="day0">Weekday</th>
+                    <th id="day1">Weekday</th>
+                    <th id="day2">Weekday</th>
+                    <th id="day3">Weekday</th>
+                    <th id="day4">Weekday</th>
+                </tr>
+                <tr>
+                    <td><img alt="forecast picture" class="forecast" id="img0" src="images/day_clear.png"><span id="temp0">Temp</span>&deg;</td>
+                    <td><img alt="forecast picture" class="forecast" id="img1" src="images/day_clear.png"><span id="temp1">Temp</span>&deg;</td>
+                    <td><img alt="forecast picture" class="forecast" id="img2" src="images/day_clear.png"><span id="temp2">Temp</span>&deg;</td>
+                    <td><img alt="forecast picture" class="forecast" id="img3" src="images/day_clear.png"><span id="temp3">Temp</span>&deg;</td>
+                    <td><img alt="forecast picture" class="forecast" id="img4" src="images/day_clear.png"><span id="temp4">Temp</span>&deg;</td>
+                </tr>
+            </table>
+        </div>
 
         <div class="article">
             <h3>Article Title</h3>
@@ -129,7 +126,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
-        WebFont.load({google: {families: ['Barlow','Montserrat']}});
+        WebFont.load({ google: { families: ['Barlow', 'Montserrat'] } });
     </script>
 </body>
 
