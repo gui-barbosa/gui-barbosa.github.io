@@ -13,13 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script> WebFont.load({google: {families: ['Barlow','Montserrat']}}); </script>
+    <script src="scripts/scripts.js"></script>
     <script src="scripts/preston.js"></script>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="images/logo.png" alt="Logo">
-        <h1>Weather For You</h1>
+        <a href="home.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
+        <a style="text-decoration:none" href="home.html"><h1>Weather For You</h1></a>
         <div class="motto">Weather right for you</div>
         <a class="ham" href="#">&#9776;</a>
     </header>
@@ -36,7 +39,7 @@
     </nav>
 
     <main>
-        <h1>Preston Idaho</h1>
+        <h1>Preston - Idaho</h1>
         <div class="hero-content">
             <picture>
                 <source srcset="images/image_franklinOriginal.jpeg" media="(min-width: 34.5em)">
@@ -56,29 +59,38 @@
                 <p>Low: <span id="low-temp">*</span>&deg;</p>
                 <p>Humidity: <span id="hum">*</span>%</p>
                 <p>Wind Speed: <span id="wind-speed">*</span> mph</p>
-                <p>Wind Chill: <span id="wind-chill">*</span></p>
+                <p>Wind Chill: <span id="wind-chill">N/A</span></p>
             </div>
         </div><br>
 
-        <div class="forecast">
-            <h3>5 Day Forecast</h3>
-            <table>
-                <tr>
-                    <th id="day0">Weekday</th>
-                    <th id="day1">Weekday</th>
-                    <th id="day2">Weekday</th>
-                    <th id="day3">Weekday</th>
-                    <th id="day4">Weekday</th>
-                </tr>
-                <tr>
-                    <td><img alt="forecast picture" class="forecast" id="img0" src="images/day_clear.png"><span id="temp0">Temp</span>&deg;</td>
-                    <td><img alt="forecast picture" class="forecast" id="img1" src="images/day_clear.png"><span id="temp1">Temp</span>&deg;</td>
-                    <td><img alt="forecast picture" class="forecast" id="img2" src="images/day_clear.png"><span id="temp2">Temp</span>&deg;</td>
-                    <td><img alt="forecast picture" class="forecast" id="img3" src="images/day_clear.png"><span id="temp3">Temp</span>&deg;</td>
-                    <td><img alt="forecast picture" class="forecast" id="img4" src="images/day_clear.png"><span id="temp4">Temp</span>&deg;</td>
-                </tr>
-            </table>
-        </div>
+        <section class="forecast">
+            <div id="day1">
+                <p id="wDay0">Day0</p>
+                <img src="images/day_clear.png" alt="forecast">
+                <p><span class="temp">Error</span>&deg; <span class="day-desc">Sunny</span></p>
+            </div>
+            <div id="day2">
+                <p id="wDay1">Day1</p>
+                <img src="images/day_clear.png" alt="forecast">
+                <p><span class="temp">Error</span>&deg; <span class="day-desc">Sunny</span></p>
+            </div>
+            <div id="day3">
+                <p id="wDay2">Day2</p>
+                <img src="images/day_clear.png" alt="forecast">
+                <p><span class="temp">Error</span>&deg; <span class="day-desc">*Sunny</span></p>
+            </div>
+            <div id="day4">
+                <p id="wDay3">Day3</p>
+                <img src="images/day_clear.png" alt="forecast">
+                <p><span class="temp">Error</span>&deg; <span class="day-desc">Sunny</span></p>
+            </div>
+            <div id="day5">
+                <p id="wDay4">Day4</p>
+                <img src="images/day_clear.png" alt="forecast">
+                <p><span class="temp">Error</span>&deg; <span class="day-desc">Sunny</span></p>
+            </div>
+        </section>
+
 
         <div class="article">
             <h3>Article Title</h3>
@@ -124,10 +136,6 @@
             </p>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-        WebFont.load({ google: { families: ['Barlow', 'Montserrat'] } });
-    </script>
 </body>
 
 </html>

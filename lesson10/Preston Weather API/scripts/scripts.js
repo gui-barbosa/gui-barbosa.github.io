@@ -27,6 +27,7 @@ window.addEventListener('load', (event) => {
     weekday[6] = "Saturday";
     week.textContent = weekday[d.getDay()];
 
+    /* Pancake event banner*/
     const pancake_event = document.getElementById('pancake_event');
     if (d.getDay() == 5) {
 

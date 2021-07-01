@@ -148,8 +148,6 @@
     }
 
     .forecast {
-        background-color: #FFA73F;
-        border: 1px solid black;
         color: #FFFFFF;
         margin-left: .5em;
         margin-right: .5em;
@@ -159,21 +157,15 @@
         justify-items: center;
     }
 
-    .forecast h3 {
-        text-align: center;
-        margin: 10px;
-        color: #FFFFFF;
-        grid-row: 1;
-        grid-column: 1/6;
+    .forecast p {
+        margin: 0;
     }
 
-    .forecast-1,
-    .forecast-2,
-    .forecast-3,
-    .forecast-4,
-    .forecast-5 {
-        display: grid;
-        max-width: 100%;
+    #day1,#day2,#day3,#day4,#day5 {
+        padding: 1em;
+        background-color: #FFA73F;
+        border: 3px solid #0E6CD6;
+        border-radius: 10px;
     }
 
     .article {

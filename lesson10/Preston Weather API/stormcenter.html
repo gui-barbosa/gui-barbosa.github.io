@@ -13,13 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
-    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script> WebFont.load({google: {families: ['Barlow','Montserrat']}}); </script>
+    <script src="scripts/towndata.js"></script>
+    <script src="scripts/scripts.js"></script>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="images/logo.png" alt="Logo">
-        <h1>Weather For You</h1>
+        <a href="home.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
+        <a style="text-decoration:none" href="home.html"><h1>Weather For You</h1></a>
         <div class="motto">Weather right for you</div>
         <a class="ham" href="#">&#9776;</a>
     </header>
@@ -121,10 +124,7 @@
             </p>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-        WebFont.load({ google: { families: ['Barlow', 'Montserrat'] } });
-    </script>
+
 </body>
 
 </html>
