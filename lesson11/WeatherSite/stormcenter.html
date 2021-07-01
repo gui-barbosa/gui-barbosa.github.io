@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 230 Preston Town Page - Gui Barbosa</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script> WebFont.load({google: {families: ['Barlow','Montserrat']}}); </script>
+    <script src="scripts/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="home.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
+        <a style="text-decoration:none" href="home.html"><h1>Weather For You</h1></a>
+        <div class="motto">Weather right for you</div>
+        <a class="ham" href="#">&#9776;</a>
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main id="form-storm">
+        <h1>Storm Report Form</h1>
+        <br>
+        <form action="thanks.html">
+            <h2>Personal Information</h2>
+            <label for="name">Full Name<span class="required">*</span></label>
+            <input type="text" name="name" id="name" pattern="[A-Za-z\s]{5,}[A-Za-z]" placeholder="Full name..." required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="example@example.com">
+            <label for="phone">Phone<span class="required">*</span></label>
+            <input type="tel" name="phone" id="phone" placeholder="999-999-9999" required>
+            <label for="zip">Zip<span class="required">*</span></label>
+            <input type="number" name="zip" id="zip" required>
+        <br>
+
+            <h2>Storm Information</h2>
+            <label for="storm-date">Storm Date</label>
+            <input type="date" name="storm-date" id="storm-date">
+            <label for="storm-type">Storm Type</label>
+            <input list="storm-types" name="storm-type" id="storm-type">
+            <label for="storm-severity">Storm severity (1-10)</label>
+            <input type="range" name="storm-severity" id="storm-severity" min="1" max="10">
+            <datalist id="storm-types">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstorm">
+                <option value="Tornado">
+            </datalist>
+            <label for="storm-region">Storm region</label>
+            <select name="storm-region" id="storm-region">
+                <option value="0" disabled>Select Region...</option>
+                <option value="preston">Preston</option>
+                <option value="soda-springs">Soda Springs</option>
+                <option value="fish-haven">Fish Haven</option>
+            </select>
+            <p>User in danger?</p>
+            <section>
+                <div class="radio">
+                    <input type="radio" name="in-danger" id="yes" value="yes">
+                    <label for="yes" id="radio-label"> Yes</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="in-danger" id="maybe" value="maybe">
+                    <label for="maybe" id="radio-label">Maybe</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="in-danger" id="no" value="no">
+                    <label for="no" id="radio-label">No</label>
+                </div>
+            </section>
+            <label for="comments">Additional info </label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <input name="submit" id="submit" type="submit" value="Send Form" class="submit-btn">
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <img class="addr-pin" src="images/pin-icon.png" alt="Address Icon"> 42 Wallaby Way, Preston - Idaho<br>
+            <img class="phone-icon" src="images/phone-icon.png" alt="Phone Icon"> (208) 852-1817<br>
+            <img class="email-icon" src="images/email-icon.png" alt="Email Icon"> contact@prestonid.us<br>
+        </div>
+
+        <a href="https://www.google.com/maps/place/Preston,+ID+83263/@42.0997416,-111.9153444,13z/data=!3m1!4b1!4m5!3m4!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!8m2!3d42.0963133!4d-111.8766173"
+            target="_blank"> <img class="preston-map" src="images/preston-map.png" alt="Map of Preston Region"></a>
+
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="Youtube"></a>
+        </div>
+
+        <div class="footer-bar">
+            <p class="copyright">
+                &copy; <span id="copyright-year"></span> | Guilherme Barbosa | Idaho | <a target="_blank"
+                    href="https://www.byui.edu/online">BYUI Online Learning</a>
+            </p>
+            <p class="dateupdate">
+                <span id="name-of-day"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
