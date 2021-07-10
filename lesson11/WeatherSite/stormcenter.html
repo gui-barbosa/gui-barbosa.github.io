@@ -14,8 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script> WebFont.load({google: {families: ['Barlow','Montserrat']}}); </script>
+    <script> WebFont.load({ google: { families: ['Barlow', 'Montserrat'] } });</script>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/range.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,9 @@
     </div>
     <header>
         <a href="home.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
-        <a style="text-decoration:none" href="home.html"><h1>Weather For You</h1></a>
+        <a style="text-decoration:none" href="home.html">
+            <h1>Weather For You</h1>
+        </a>
         <div class="motto">Weather right for you</div>
         <a class="ham" href="#">&#9776;</a>
     </header>
@@ -34,8 +37,8 @@
         <ul id="navigation">
             <li><a href="home.html">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
             <li><a class="active" href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
@@ -47,22 +50,24 @@
         <form action="thanks.html">
             <h2>Personal Information</h2>
             <label for="name">Full Name<span class="required">*</span></label>
-            <input type="text" name="name" id="name" pattern="[A-Za-z\s]{5,}[A-Za-z]" placeholder="Full name..." required>
+            <input type="text" name="name" id="name" pattern="[A-Za-z\s]{5,}[A-Za-z]" placeholder="Full name..."
+                required>
             <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="example@example.com">
             <label for="phone">Phone<span class="required">*</span></label>
             <input type="tel" name="phone" id="phone" placeholder="999-999-9999" required>
             <label for="zip">Zip<span class="required">*</span></label>
             <input type="number" name="zip" id="zip" required>
-        <br>
+            <br>
 
             <h2>Storm Information</h2>
             <label for="storm-date">Storm Date</label>
             <input type="date" name="storm-date" id="storm-date">
             <label for="storm-type">Storm Type</label>
             <input list="storm-types" name="storm-type" id="storm-type">
-            <label for="storm-severity">Storm severity (1-10)</label>
-            <input type="range" name="storm-severity" id="storm-severity" min="1" max="10">
+            <label for="storm-severity">Storm Severity: <span id="ratingvalue">5</span></label>
+            <input type="range" name="storm-severity" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
             <datalist id="storm-types">
                 <option value="Flash Flood">
                 <option value="Hail">
