@@ -80,12 +80,38 @@ header {
 
 .intro {
   margin: 8px;
-  display: grid;
-  grid-template-rows: 20px 200px 25px;
+  display: block;
+  /* grid-template-rows: 20px 200px 25px; */
   }
 
 body {
   background-color: #007eb1;
+}
+
+#home-main {
+  max-width: 900px;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-top: 1em;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.reserv-btn {
+  width: 350px;
+  justify-self: center;
+  margin-top: 1em;
+  background-color: #0E6CD6;
+  color: white;
+  font-weight: bold;
+  font-size: .9em;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.reserv-btn:hover {
+  background-color: #C3D1F8;
+  color: #0E6CD6;
 }
 
 header a,
