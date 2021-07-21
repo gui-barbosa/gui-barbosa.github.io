@@ -1,0 +1,89 @@
+[
+    {
+        "name":"Salt Lake Temple",
+        "phone":"801-240-2640",
+        "address1":"50 W North Temple St",
+        "city":"Salt Lake City",
+        "state":"UT",
+        "zip":"84150",
+        "country": "UNITED STATES",
+        "imageurl":"https://assets.ldscdn.org/cc/dc/ccdce513b921520a0740a60b5f349759a269eceb142197/salt_lake_temple_lds.jpeg",
+        "announced": "28 July 1847",
+        "groundbreaking": "14 February 1853",
+        "dedicated": "6 April 1893",
+        "presidents":[
+            "Lorenzo Snow","Joseph F. Smith","Anthon H. Lund","George F. Richards","Stephen L. Chipman","Joseph Fielding Smith","Robert D. Young","ElRay L. Christiansen","Willard E. Smith","Howard S. McDonald","O. Leslie Stone","John K. Edmunds","A. Ray Curtis","Marion D. Hanks","Victor L. Brown","Edgar M. Denny","Spencer H. Osborn","George I. Cannon"
+            ,"Carlos E. Asay","Derrill H. Richards","W. Eugene Hansen","L. Aldin Porter","M. Richard Walker","Sheldon F. Child","O. Claron Alldredge Jr.","Cecil O. Samuelson","Blaine J. Wixom Jr."
+        ]
+    },
+
+    {
+        "name":"Campinas Brazil Temple",
+        "phone":"+55 19-2102-5800",
+        "address1":"Rua James Esdras Faust, 400",
+        "city":"Campinas",
+        "state":"SP",
+        "zip":"13092-820",
+        "country": "BRAZIL",
+        "imageurl":"https://assets.ldscdn.org/33/cb/33cb73d045a401cfc3d837910eac29ab672ae74c/campinas_brazil_temple_lds.jpeg",
+        "announced": "3 April 1997",
+        "groundbreaking": "1 May 1998",
+        "dedicated": "17 May 2002",
+        "presidents":[
+            "Sadayosi Ichi","Adhemar Damiani","Izaias P. Nogueira","George A. Oakes","Silvio Geschwandtner","Alceu Arndt","Gilson R. Prieto"
+        ]
+    },
+
+    {
+        "name":"Hamilton New Zealand Temple",
+        "phone":"+64 7-846 2750",
+        "address1":"509 Tuhikaramea Rd",
+        "city":"Hamilton",
+        "state":"Waikato",
+        "zip":"3218",
+        "country": "NEW ZEALAND",
+        "imageurl":"https://assets.ldscdn.org/59/e0/59e0fb53c4b7fc66b749c5b0218a3ec41ca9dd52/hamilton_new_zealand_lds_temple.jpg",
+        "announced": "17 February 1955",
+        "groundbreaking": "21 December 1955",
+        "dedicated": "20 April 1958",
+        "presidents":[
+            "E. Albert Rosenvall","John B. Hawkes","Heber G. Jensen","Zachariah E. Brown","Fred W. Schwendiman","Alfred R. I. Gary","William Roberts","Hugh A. Daysh","Glen L. Rudd","Milton W. Russon","John Sonnenberg","Douglas J. Martin","Kenneth J. Domney","Rulon G. Craven","William Campbell","James A. Morely","Paul T. McAndrew","James Dunlop"
+            ,"Sidney M. Going","Michael A. Roberts","Michael A. Roberts"
+        ]
+    },
+
+    {
+        "name":"Brisbane Australia Temple",
+        "phone":"+61 7-3240-3600",
+        "address1":"200 River Terrace",
+        "city":"Brisbane",
+        "state":"QLD",
+        "zip":"4169",
+        "country": "AUSTRALIA",
+        "imageurl":"https://assets.ldscdn.org/06/aa/06aaeacb6d6d81553b5cfdf881021d32e2a707f6/brisbane_australia_temple_lds.jpeg",
+        "announced": "20 July 1998",
+        "groundbreaking": "26 May 2001",
+        "dedicated": "15 June 2003",
+        "presidents":[
+            "John D. Jeffrey","Terence L. Davies","John R. Gibson","Dirk Smibert","Grant A. Pitman","Robert M. Cowan","Douglas W. Hill","Richard G. Gordon"
+        ]
+    },
+
+    {
+        "name":"Mesa Arizona Temple",
+        "phone":"480-833-1211",
+        "address1":"101 S Lesueur",
+        "city":"Mesa",
+        "state":"AZ",
+        "zip":"85204",
+        "country": "UNITED STATES",
+        "imageurl":"https://churchofjesuschristtemples.org/assets/img/temples/mesa-arizona-temple/mesa-arizona-temple-19367-main.jpg",
+        "announced": "20 July 1998",
+        "groundbreaking": "26 May 2001",
+        "dedicated": "15 June 2003",
+        "presidents":[
+            "David K. Udall","Charles R. Jones","Charles Pugh","Harry L. Payne","Arwell L. Pierce","J. Robert Price","Jesse M. Smith","C. Bryant Whiting","Junius E. Driggs","L. Harold Wright","LeRoy Layton","Nephi S. Allen","John H. Tanner","E. Widtsoe Shumway"
+            ,"L. Kenyon Udall","John R. Peterson","Albert Choules Jr.","Ezra T. Clark Jr.","Daryl H. Garn","R. Gordon Porter","J Brent Hatch","Kenneth M. Smith"
+        ]
+    }
+]

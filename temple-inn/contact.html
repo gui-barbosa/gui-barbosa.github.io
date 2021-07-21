@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script> WebFont.load({ google: { families: ['Barlow', 'Montserrat'] } });</script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
+        <a class="ham" href="#">&#9776;</a>
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="contact-main">
+
+        <div id="company-info">
+
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370285236!2d-77.09772048480225!3d38.98325594948393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1626734471723!5m2!1sen!2sus"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div id="contact-us">
+
+                <form id="contact-form">
+                    <h1>Contact Us</h1>
+                    <div>
+
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+
+                    </div>
+                    <div>
+
+                        <input type="text" id="email" name="email" placeholder="Email" required>
+
+                    </div>
+                    <div>
+                        <br>
+                        <div>
+
+                            <textarea name="comments" id="comments" cols="50" rows="7" placeholder="Your message here..." required></textarea>
+
+                        </div>
+                        <div id="form-button"><button id="btn" type="submit" value="Submit">Send Message</button></div>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bar">
+            <p class="copyright">
+                &copy; <span id="copyright-year"></span> | Guilherme Barbosa | Idaho | <a target="_blank"
+                    href="https://www.byui.edu/online">BYU-I</a>
+            </p>
+            <p class="dateupdate">
+                <span id="name-of-day"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+
+</body>
+
+</html>

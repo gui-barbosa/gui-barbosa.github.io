@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script> WebFont.load({ google: { families: ['Barlow', 'Montserrat'] } });</script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
+        <a class="ham" href="#">&#9776;</a>
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a class="active" href="reservation.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="reservation">
+        <h1>Make Your Reservation</h1><hr width="100%" color="black">
+        <br>
+        <form action="thanks.html">
+
+            <h2>Guest Information</h2><hr width="100%" color="black"><br>
+            <label for="name">Full Name<span class="required"> *</span></label>
+            <input type="text" name="name" id="name" pattern="[A-Za-z\s]{5,}[A-Za-z]" placeholder="Full name..." required>
+
+            <label for="email">Email<span class="required"> *</span></label>
+            <input type="email" name="email" id="email" placeholder="example@example.com">
+
+            <label for="phone">Phone<span class="required"> *</span></label>
+            <input type="tel" name="phone" id="phone" placeholder="999-999-9999" required>
+
+            <h2>Room Details</h2><hr width="100%" color="black"><br>
+            <label for="check-in">Check in<span class="required"> *</span></label></label>
+            <input type="date" name="reserv-date" id="reserv-date" required>
+
+            <label for="check-out">Check out<span class="required"> *</span></label></label>
+            <input type="date" name="reserv-date" id="reserv-date" required>
+
+            <label for="num-guest">Number of Guests<span class="required"> *</span></label>
+            <input type="number" min="1" max="4" required>
+
+
+            <label for="hotel-location">Location<span class="required"> *</span></label></label>
+            <select name="hotel-location" id="hotel-location">
+                <option value="0" enabled>Choose a hotel location...</option>
+                <option value="salt-lake-city">Salt Lake City - UT</option>
+                <option value="mesa">Mesa - AZ</option>
+                <option value="campinas">Campinas - BRAZIL</option>
+                <option value="brisbane">Brisbane - AUSTRALIA</option>
+                <option value="hamilton">Hamilton - NEW ZEALAND</option>
+            </select>
+
+            <p>Are you bringing a pet?</p>
+            <section>
+                <div class="radio">
+                    <input type="radio" name="pet" id="yes" value="yes">
+                    <label for="yes" id="radio-label"> Yes</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="pet" id="no" value="no">
+                    <label for="no" id="radio-label">No</label>
+                </div>
+            </section>
+
+            <label for="comments">Additional info </label>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Please add any additional information or any request you may have."></textarea>
+            <input name="submit" id="submit" type="submit" value="Make Reservation" class="submit-btn">
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="footer-bar">
+            <p class="copyright">
+                &copy; <span id="copyright-year"></span> | Guilherme Barbosa | Idaho | <a target="_blank"
+                    href="https://www.byui.edu/online">BYU-I</a>
+            </p>
+            <p class="dateupdate">
+                <span id="name-of-day"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/slides.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+
+</body>
+
+</html>

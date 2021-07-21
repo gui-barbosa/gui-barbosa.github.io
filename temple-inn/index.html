@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script> WebFont.load({ google: { families: ['Barlow', 'Montserrat'] } });</script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
+        <a class="ham" href="#">&#9776;</a>
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="intro">
+            <p>“Making you feel yourself at home”</p>
+            <p>What is the similarity between Your home, the Temple, and Temple Inn & Suites? You look for these
+                three options to find your physical and spiritual peace. Our mission is to bring an unforgettable
+                experience, where you will rest between your outdoor activities, and give you a relaxing stay when
+                you are not involved with your outdoor activities.</p>
+            
+            <button onclick="window.location='reservation.html'">Make Your Reservation</button>
+
+        </div>        
+
+        <div id="slideshow">
+
+            <div>
+                <img src="https://assets.ldscdn.org/59/e0/59e0fb53c4b7fc66b749c5b0218a3ec41ca9dd52/hamilton_new_zealand_lds_temple.jpg"
+                    class="imgslides" alt="image">
+            </div>
+            <div>
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
+                    class="imgslides" alt="image">
+            </div>
+            <div>
+                <img src="https://assets.ldscdn.org/33/cb/33cb73d045a401cfc3d837910eac29ab672ae74c/campinas_brazil_temple_lds.jpeg"
+                    class="imgslides" alt="image">
+            </div>
+            <div>
+                <img src="https://assets.ldscdn.org/06/aa/06aaeacb6d6d81553b5cfdf881021d32e2a707f6/brisbane_australia_temple_lds.jpeg"
+                    class="imgslides" alt="image">
+            </div>
+            <div>
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/mesa-arizona-temple/mesa-arizona-temple-19367-main.jpg"
+                    class="imgslides" alt="image">
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-bar">
+            <p class="copyright">
+                &copy; <span id="copyright-year"></span> | Guilherme Barbosa | Idaho | <a target="_blank"
+                    href="https://www.byui.edu/online">BYU-I</a>
+            </p>
+            <p class="dateupdate">
+                <span id="name-of-day"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/slides.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+
+</body>
+
+</html>

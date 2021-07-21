@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script> WebFont.load({ google: { families: ['Barlow', 'Montserrat'] } });</script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
+        <a class="ham" href="#">&#9776;</a>
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a class="active" href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="services-main">
+
+        <h2>Our specialized services include:</h2>
+        <img src="images/weeding.jpg" class="weed" alt="weeding altar">
+        <p>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and
+            need to change to and from church clothes</p>
+        <p>Long term stay accommodations in kitchenette suites for full-time temple missionaries</p>
+        <p>A temple history themed reception and sitting area.</p>
+        <p>A wedding reception hall that can be easily customized with a simple catering menu and kitchen
+            access for food preparation and serving.</p>
+        <p>A business center that supports family search and ordinance work</p><br>
+
+
+        <h2>Some of the free amenities include:</h2>
+        <img src="images/breakfast.jpg" class="breakfast" alt="breakfast">
+        <p>Breakfast<br>
+        Exercise/workout room<br>
+        Indoor pool<br>
+        WiFi high-speed internet access and smart tvs<br>
+        Parking<br>
+        Family history consultation and ordinance card services</p><br>
+
+
+
+        <h2>Full-Time Missionaries</h2>
+        <img src="images/missionaries.jpg" class="missionaries" alt="missionaries">
+        <p>Temple Inn & Suites provides the event room and catering services
+            every wednesday morning for the missionaries meetings.
+        </p>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-bar">
+            <p class="copyright">
+                &copy; <span id="copyright-year"></span> | Guilherme Barbosa | Idaho | <a target="_blank"
+                    href="https://www.byui.edu/online">BYU-I</a>
+            </p>
+            <p class="dateupdate">
+                <span id="name-of-day"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+
+</body>
+
+</html>

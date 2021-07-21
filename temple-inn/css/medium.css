@@ -1,0 +1,152 @@
+@media only screen and (min-width: 34.5em) {
+    nav {
+      max-width: 100%;
+    }
+
+    #navigation {
+        grid-template-columns: repeat(5, auto);
+        font-size: 1.1em;
+        margin: 0px auto;
+      }
+
+    #navigation li {
+        display: block;
+      }
+
+    #navigation a {
+        text-align: center;
+        display: block;
+        padding-top: .8em;
+        padding-bottom: .8em;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 700;
+      }
+
+    .ham {
+        display: none;
+      }
+
+    header {
+      background-color: white;
+      padding: 0px;
+      max-width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      font-family: 'Montserrat', sans-serif;    
+    }
+
+    .logo {
+      width: 225px;
+      height: 150px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .intro {
+      margin: 8px;
+      margin-top: 0px;
+      display: grid;
+      grid-template-rows: 20px 200px 25px;
+    }
+
+    body {
+      background-color: #007eb1;
+    }
+
+    main {
+      max-width: 100%;
+      padding-left: .5em;
+      padding-right: .5em;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.75em;
+    }
+
+    p {
+        font-size: 1.25em;
+    }
+
+    #slideshow {
+      margin: 50px auto;
+      position: relative;
+      width: 100%;
+      height: 550px;
+      object-fit: cover;
+      max-width: 850px;
+      padding: 5px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+      
+    #slideshow > div {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+    }
+
+    .imgslides {
+      width: 100%;
+      height: 100%;
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      color: #FFFFFF;
+      margin-top: .5em;
+      margin-bottom: .5em;
+    }
+
+    .footer-bar p {
+      margin: 1px;
+      font-size: 1em;
+    }
+
+    #temples p {
+        font-size: 1.3rem;
+    }
+
+    .submit-btn {
+      width: 400px;
+      padding: 2em;
+      justify-self: center;
+      margin-top: 1em;
+      background-color: #0E6CD6;
+      color: white;
+      font-size: 1.1em;
+      transition: 300ms;
+      box-shadow: 0 5px 20px rgb(0 0 0 / 100%);
+    }
+
+    #thanks-main p {
+      margin: 0 auto;
+      padding-bottom: 1em;
+      text-align: left;
+    }
+
+    #thanks-main a {
+      font-size: 1.2em;
+    }
+
+    #thanks-main h1 {
+      font-size: 1.7em;
+    }
+
+    #thanks-main h3 {
+      font-size: 1.4em;
+    }
+
+}
